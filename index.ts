@@ -11,7 +11,7 @@ export const Root = {
 
 // The endpoint action is invoked whenever the program's URL endpoint is accessed
 // Right-click on the program in the sidebar and "Open Endpoint URL"
-export async function endpoint({ args }) {
+export async function endpoint(args) {
   switch (args.method) {
     case "GET":
       const data = state.data[args.path];
